@@ -1,0 +1,82 @@
+body {
+	background: url("img/bcg.png") 50% 50% ;
+	bacground-size:contain;
+
+}
+.container{
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.pages{
+	display: flex;
+	flex-direction: column;
+}
+a{
+	text-decoration: none;
+	color: #dc3545;
+	font-size: 35px;
+	padding: 50px;
+	font-weight: bold;
+	
+	z-index: 10;
+
+
+	}
+h1{
+	text-align: center;
+	color: #333;
+	font-size: 60px;
+	margin-top: 40px;
+
+}
+h2{
+	text-align: center;
+	color: #044e38;
+	font-weight: bold;
+	font-size: 50px;
+}
+.photo-pages{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 100px;
+
+}
+.img-pages-one {
+	width: 250px;
+	height: 250px;
+	background: url('./img/information.png') 50% 50% no-repeat;
+	background-size: cover;
+	display: block;
+	border-radius: 50%;
+	position: relative;
+
+}
+.home{
+	background: url('./img/home.png') 67% 0% no-repeat;
+
+}
+.team{
+	background: url('./img/team.png') 50% 54%  no-repeat;
+}
+.about {
+	background: url('./img/about.png') 0% 1%   no-repeat;
+}
+.img-pages-one:hover .page-one{
+	opacity: 1;
+}
+
+.page-one{
+	opacity: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background: rgba(41,36,36,0.33);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 3;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
